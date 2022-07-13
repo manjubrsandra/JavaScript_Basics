@@ -1,0 +1,131 @@
+// using arrow function
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrow Functions</h2>
+
+<p>With arrow functions, you don't have to type the function keyword, the return keyword, and the curly brackets.</p>
+
+<p>Arrow functions are not supported in IE11 or earlier.</p>
+
+<p id="demo"></p>
+
+<script>
+const x = (x, y) => x * y;
+document.getElementById("demo").innerHTML = x(5, 5);
+</script>
+
+</body>
+</html>
+
+
+//using loop over array
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Of Loop</h2>
+<p>The for of statement loops through the values of any iterable object:</p>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Mini"];
+
+let tex = "";
+for (let x of cars) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+
+// using loop over string
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Of Loop</h2>
+
+<p>The for of statement loops through the values of an iterable object.</p>
+
+<p id="demo"></p>
+
+<script>
+let language = "JavaScript";
+
+let text = "";
+for (let x of language) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+// using maps
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Objects as keys in a Map:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create Objects
+const apples = {name: 'Apples'};
+const bananas = {name: 'Bananas'};
+const oranges = {name: 'Oranges'};
+
+// Create a new Map
+const fruits = new Map();
+
+// Add the Objects to the Map
+fruits.set(apples, 500);
+fruits.set(bananas, 300);
+fruits.set(oranges, 200);
+
+// Display Object Type
+document.getElementById("demo").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+//using sets
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Sets</h2>
+<p>Add values to a Set:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Set
+const letters = new Set();
+
+// Add Values to the Set
+letters.add("a");
+letters.add("b");
+letters.add("c");
+
+// Display set.size
+document.getElementById("demo").innerHTML = letters.size;
+</script>
+
+</body>
+</html>
+
